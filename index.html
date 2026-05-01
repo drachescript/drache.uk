@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>drache.uk</title>
+  <meta name="description" content="drache.uk" />
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09090d;
+      --card: rgba(18, 18, 28, 0.88);
+      --text: #f4f4f7;
+      --muted: #b7b7c8;
+      --line: rgba(255, 255, 255, 0.12);
+      --accent: #9b5cff;
+      --accent-2: #ff5c9b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(155, 92, 255, 0.25), transparent 34rem),
+        radial-gradient(circle at bottom right, rgba(255, 92, 155, 0.18), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(760px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--card);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      padding: clamp(28px, 6vw, 56px);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 10vw, 6.5rem);
+      line-height: 0.95;
+      margin: 0;
+      letter-spacing: -0.08em;
+    }
+
+    h1 span {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.7;
+      margin: 24px auto 0;
+      max-width: 560px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 12px 18px;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    footer {
+      margin-top: 36px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="badge">drache.uk is live</div>
+
+    <h1>drache<span>.uk</span></h1>
+
+    <p>
+      A small landing page for now. More stuff can be added here later once the domain has a real use.
+    </p>
+  </main>
+</body>
+</html>
